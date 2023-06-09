@@ -2,9 +2,10 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 h1 {
@@ -30,11 +31,12 @@ ul {
 }
 
 ul li {
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 10px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flexbox;
 }
 
 .noticia-selecionada {
@@ -61,9 +63,10 @@ ul li {
   background-color: #333;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
 .button:hover {
@@ -178,5 +181,40 @@ ul li {
   display: block;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.h1{
+  border-radius: 3px;
+  background-color: #eee;
+  
+}
+
+.butao{
+  text-align: center;
+  padding: 10px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  display: block;
+
+}
+
+.botao{
+  text-align: center;
+  padding: 5px 25px;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+  display: inline-flex;
+
+}
+
+.titulo-noticias{
+  text-align: center;
+}
+
+.conteudo{
+  text-align: center;
 }
 

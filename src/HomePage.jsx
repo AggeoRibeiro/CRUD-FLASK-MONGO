@@ -81,7 +81,7 @@ function HomePage() {
 
   return (
     <div className='container'>
-      <h1>Notícias</h1>
+      <div className='h1'><h1>Notícias</h1></div>
       <form className='formulario_titulo' onSubmit={criarNoticia}>
         <input
           type="text"
@@ -93,7 +93,7 @@ function HomePage() {
           conteudo={conteudo}
           setConteudo={setConteudo}
         />
-        <button type="submit">Publicar</button>
+        <button className='butao' type="submit" textAlignment='center' >Publicar</button>
       </form>
       <ul>
         {noticias.map((noticia) => (
@@ -111,7 +111,7 @@ function HomePage() {
           <h2>{noticiaSelecionada.titulo}</h2>
           <div dangerouslySetInnerHTML={{ __html: noticiaSelecionada.conteudo }}></div>
           <p>{noticiaSelecionada.data_publicacao}</p>
-          <button onClick={() => setNoticiaSelecionada(null)}>Fechar</button>
+          <button className='botao' onClick={() => setNoticiaSelecionada(null)}>Fechar</button>
         </div>
       )}
     </div>

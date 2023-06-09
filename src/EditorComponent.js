@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { Editor, EditorState, RichUtils } from 'draft-js';
 import { stateToHTML } from 'draft-js-export-html';
+import 'draft-js/dist/Draft.css';
 
 
 function EditorComponent({ conteudo, setConteudo }) {
@@ -32,18 +33,21 @@ function EditorComponent({ conteudo, setConteudo }) {
   
     return (
       <div>
-        <button type="button" onClick={handleBoldClick}>
-          Negrito
-        </button>
-        <button type="button" onClick={handleUnderlineClick}>
-          Sublinhado
-        </button>
+        
   
         <Editor
           editorState={editorState}
           onChange={handleEditorChange}
           placeholder="Conteúdo"
+          textAlignment='center'
+          
         />
+        <button className='botao' type="button" onClick={handleBoldClick}>
+          Negrito
+        </button>
+        <button className='botao' type="button" onClick={handleUnderlineClick}>
+          Sublinhado
+        </button>
       </div>
     );
   }
