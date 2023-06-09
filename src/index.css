@@ -90,3 +90,93 @@ ul li {
   min-height: 150px;
   font-size: 16px;
 }
+/* Estilo para o editor Draft.js */
+.DraftEditor-root {
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 200px;
+  overflow: auto;
+}
+
+/* Estilo para o conteúdo do editor Draft.js */
+.DraftEditor-editorContainer {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+/* Estilo para as seleções de texto no editor Draft.js */
+.DraftEditor-content {
+  outline: none;
+}
+
+/* Estilo para os blocos de conteúdo no editor Draft.js */
+.DraftEditor-contentBlock {
+  margin-bottom: 1em;
+}
+
+/* Estilo para o texto dentro dos blocos de conteúdo no editor Draft.js */
+.DraftEditor-contents {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Estilo para os botões de formatação no editor Draft.js */
+.DraftEditor-formatButton {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Estilo para os botões de formatação ativos no editor Draft.js */
+.DraftEditor-formatButton.active {
+  background-color: #ccc;
+}
+
+/* Estilo para os blocos de citação no editor Draft.js */
+.public-DraftStyleDefault-blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1em;
+  border-left: 2px solid #ccc;
+  color: #666;
+}
+
+/* Estilo para as listas não ordenadas no editor Draft.js */
+.public-DraftStyleDefault-ul {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+/* Estilo para os itens das listas não ordenadas no editor Draft.js */
+.public-DraftStyleDefault-ul > .public-DraftStyleDefault-depth0 {
+  list-style-type: disc;
+}
+
+/* Estilo para as listas ordenadas no editor Draft.js */
+.public-DraftStyleDefault-ol {
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+/* Estilo para os itens das listas ordenadas no editor Draft.js */
+.public-DraftStyleDefault-ol > .public-DraftStyleDefault-depth0 {
+  list-style-type: decimal;
+}
+
+/* Estilo para as imagens no editor Draft.js */
+.public-DraftStyleDefault-block {
+  position: relative;
+}
+
+.public-DraftStyleDefault-block .public-DraftStyleDefault-image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
