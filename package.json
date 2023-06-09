@@ -5,13 +5,20 @@
   "homepage": "./frontend/public",
   "dependencies": {
     "axios": "^0.21.1",
+    "draft-convert": "^2.1.13",
     "draft-js": "^0.11.7",
     "draft-js-export-html": "^1.4.1",
+    "draft-js-image-plugin": "^2.0.7",
+    "draft-js-import-html": "^1.4.1",
+    "draft-js-plugins-editor": "^3.0.0",
+    "draftjs-to-html": "^0.9.1",
+    "install": "^0.13.0",
+    "npm": "^9.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-draft-wysiwyg": "^1.15.0",
     "react-router-dom": "^6.12.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",

@@ -5,6 +5,7 @@ from datetime import datetime
 
 
 
+
 criar_noticia_bp = Blueprint('criar_noticia_bp', __name__)
 obter_noticias_bp = Blueprint('obter_noticias_bp', __name__)
 
