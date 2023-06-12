@@ -15,7 +15,7 @@ O intuito e produzir uma API-REST utilizando o Flask e MONGODB.
 
 4- Execute o comando "pip install -r requiments.txt" para instalar as dependencias do back-end.
 
-5- 
+5- Navegue ate a pasta raiz do projeto
 
 
 6- Execute o comando "npm install" para realizar as instalacoes das dependencias do front-end.
