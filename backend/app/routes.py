@@ -3,13 +3,22 @@ from pymongo import MongoClient
 from bson.objectid import ObjectId
 from datetime import datetime
 
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
 
+uri = "mongodb+srv://admin:admin@cluster0.dpbxfet.mongodb.net/?retryWrites=true&w=majority"
 
 criar_noticia_bp = Blueprint('criar_noticia_bp', __name__)
 obter_noticias_bp = Blueprint('obter_noticias_bp', __name__)
 
-client = MongoClient('mongodb://localhost:27017')
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
 db = client['noticiasdb']
 noticias_collection = db['noticias']
 

@@ -16,6 +16,7 @@ function HomePage() {
   useEffect(() => {
     buscarNoticias();
   }, []);
+  
 
   const buscarNoticias = async () => {
     try {
@@ -88,13 +89,12 @@ function HomePage() {
           placeholder="Título"
           value={titulo}
           onChange={(e) => setTitulo(e.target.value)}
-          textAlignment='center'
         />
         <EditorComponent
           conteudo={conteudo}
           setConteudo={setConteudo}
         />
-        <button className='butao' type="submit" textAlignment='center' >Publicar</button>
+        <button className='butao' type="submit" >Publicar</button>
       </form>
       <ul>
         {noticias.map((noticia) => (

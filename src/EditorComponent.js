@@ -39,7 +39,6 @@ function EditorComponent({ conteudo, setConteudo }) {
           editorState={editorState}
           onChange={handleEditorChange}
           placeholder="Conteúdo"
-          textAlignment='center'
           
         />
         <button className='botao' type="button" onClick={handleBoldClick}>

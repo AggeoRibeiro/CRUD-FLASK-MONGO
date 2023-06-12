@@ -4,12 +4,16 @@ Projeto realizado utilizando Python, FLASK, react, mongoDB edraft.js.
 
 O intuito e produzir uma API-REST utilizando o Flask e MONGODB.
 
-mongodb://localhost:27017
-react: //localhost:3000
-Foram realizados testes pelo insomnia:
-https://imgur.com/a/c7vlVSK-- Listagem de todas as noticias, listagem de uma so noticia a partir do ID, Adicionar uma noticia pelo ID, Excluir uma noticia pelo ID, e editar (atualizar) uma noticia pelo ID.
-Tambem no link e possivel visualizar o site operando. 
-O site nao ficou tao bonito (por minha falta de conhecimento em frontend CSS e REACT) e futuramente pretendo adicionar outras funcionalidades como adicionar imagens. 
+1- Primeiramente para utilizar o projeto e necessario ter o Python (estou utilizando Python 3.10.6), nodeJs(estou utlizando 18.16.0) e interpretador de linha de comando.
+2- Abra o terminal e faca o clone do projeto (git clone https://github.com/AggeoRibeiro/CRUD-FLASK-MONGO.git)
+3- Navegue ate a pasta  ./backend
+4- Execute o comando "pip install -r requiments.txt" para instalar as dependencias do back-end.
+5- Execute o comando "npm install" para realizar as instalacoes das dependencias do front-end.
+6- Navegue ate a pasta ./backend/app/
+7- Execute o comando python3 app.py para iniciar o back-end.
+8- Abra outro terminal na pasta ./src
+9- Execute o comando "npm start" para iniciar o front-end.
+10- O projeto esta funcionando.
 
 
 
